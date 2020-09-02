@@ -5,7 +5,40 @@ body
     background: #111111; 
 }
 
-.box_login
+@font-face
+{
+font-family: 'DINPro Light';
+font-style: normal;
+font-weight: normal;
+src: local('DINPro Light'), url(assets/DINPro-Light\ tr.woff) format('woff');
+}
+
+
+@font-face
+{
+font-family: 'DINPro Medium';
+font-style: normal;
+font-weight: normal;
+src: local('DINPro Medium'), url(assets/DINPro-Medium\ tr.woff) format('woff');
+}
+
+@font-face
+{
+font-family: 'DINPro Black';
+font-style: normal;
+font-weight: normal;
+src: local('DINPro Black'), url(assets/DINPro-Black\ tr.woff) format('woff');
+}
+
+@font-face
+{
+font-family: 'DINPro Bold';
+font-style: normal;
+font-weight: normal;
+src: local('DINPro Bold'), url(assets/DINPro-Bold\ tr.woff) format('woff');
+}
+
+.form_login
 {
     position: absolute;
     top: 15%;
@@ -14,7 +47,7 @@ body
     background: #ffffff;
     width: 300px;
     height: 400px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: DINPro Medium;
     font-size: 25px;
     border-radius: 5px;
     text-align: center;
@@ -28,15 +61,26 @@ body
     background: none;
     color: #ffffff;
     width: 100px;
-    height: 50px;
+    height: 45px;
     border: 2px solid #07689f;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 25px;
+    transition: 0.4s;
+    font-family: DINPro Medium;
+    font-size: 22px;
     border-radius: 5px;
 }
 
 .button_login:hover
 {
-    transition-duration: 0.4s;
     background: #07689f;
+}
+
+.button_login:focus
+{ 
+    outline: none;
+}
+
+.button_login:active
+{
+    background: #1493dd;
+    border: solid #1493dd;
 }
