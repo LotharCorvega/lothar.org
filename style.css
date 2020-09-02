@@ -8,14 +8,16 @@ body
 .box_login
 {
     position: absolute;
-    top: 40%;
-    left: 50%;
+    top: 15%;
+    right: 50%;
+    transform: translate(50%, 20%);
     background: #ffffff;
     width: 300px;
-    height: 500px;
+    height: 400px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 25px;
     border-radius: 5px;
+    text-align: center;
 }
 
 .button_login
