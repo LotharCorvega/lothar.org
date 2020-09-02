@@ -1,0 +1,40 @@
+body
+{
+    width: 100%;
+    height: 100%;
+    background: #111111; 
+}
+
+.box_login
+{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    background: #ffffff;
+    width: 300px;
+    height: 500px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.button_login
+{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background: none;
+    color: #ffffff;
+    width: 100px;
+    height: 50px;
+    border: 2px solid #07689f;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.button_login:hover
+{
+    transition-duration: 0.4s;
+    background: #07689f;
+}
