@@ -1,56 +1,30 @@
 body
 {
+    font-family: DINPro Medium;
     width: 100%;
     height: 100%;
     background: #111111; 
 }
 
-@font-face
-{
-font-family: 'DINPro Light';
-font-style: normal;
-font-weight: normal;
-src: local('DINPro Light'), url(assets/DINPro-Light\ tr.woff) format('woff');
-}
-
-
-@font-face
-{
-font-family: 'DINPro Medium';
-font-style: normal;
-font-weight: normal;
-src: local('DINPro Medium'), url(assets/DINPro-Medium\ tr.woff) format('woff');
-}
-
-@font-face
-{
-font-family: 'DINPro Black';
-font-style: normal;
-font-weight: normal;
-src: local('DINPro Black'), url(assets/DINPro-Black\ tr.woff) format('woff');
-}
-
-@font-face
-{
-font-family: 'DINPro Bold';
-font-style: normal;
-font-weight: normal;
-src: local('DINPro Bold'), url(assets/DINPro-Bold\ tr.woff) format('woff');
-}
-
-.form_login
+.login_form
 {
     position: absolute;
     top: 15%;
     right: 50%;
-    transform: translate(50%, 20%);
-    background: #ffffff;
+    transform: translate(50%, 50%);
     width: 300px;
     height: 400px;
+    border-radius: 5px;
+    background: #ffffff;
+    display: none;
+}
+
+.login_form_title
+{
     font-family: DINPro Medium;
     font-size: 25px;
-    border-radius: 5px;
-    text-align: center;
+    text-align: center;    
+    padding: 25px;
 }
 
 .button_login
@@ -58,15 +32,19 @@ src: local('DINPro Bold'), url(assets/DINPro-Bold\ tr.woff) format('woff');
     position: absolute;
     top: 25px;
     right: 25px;
-    background: none;
-    color: #ffffff;
     width: 100px;
     height: 45px;
+    background: none;
     border: 2px solid #07689f;
+    border-radius: 5px;
     transition: 0.4s;
+
+    color: #ffffff;    
     font-family: DINPro Medium;
     font-size: 22px;
-    border-radius: 5px;
+    line-height:0;
+    text-align: center;
+    padding-bottom: 20px auto;
 }
 
 .button_login:hover
@@ -83,4 +61,12 @@ src: local('DINPro Bold'), url(assets/DINPro-Bold\ tr.woff) format('woff');
 {
     background: #1493dd;
     border: solid #1493dd;
+}
+
+@font-face
+{
+font-family: 'DINPro Medium';
+font-style: normal;
+font-weight: normal;
+src: local('DINPro Medium'), url(assets/DINPro-Medium\ tr.woff) format('woff');
 }
