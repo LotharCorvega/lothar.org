@@ -1,3 +1,10 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    font-family: DINPro Medium;
+}
+
 :root
 {
     --color_background: #111111;
@@ -5,13 +12,50 @@
     --color_button_login_active: #1493dd;
 }
 
+a{color: white; text-decoration: none;}
+ul {list-style: none}
+
 body
 {
-    font-family: DINPro Medium;
     width: 100%;
     height: 100%;
     background: var(--color_background); 
 }
+
+#directory
+{
+    margin: 50px;
+    position: absolute;
+    color: white;
+    font-size: 22px;
+}
+
+li::before
+{
+    content: "-"; 
+    color: red;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+
+.subfolder
+{
+    margin-left: 20%;
+    display: none;
+}
+
+#folder_documents:hover ~#subfolder_documents {display: block;}
+#subfolder_documents:hover {display: block;}
+
+#folder_music:hover ~#subfolder_music {display: block;}
+#subfolder_music:hover {display: block;}
+
+#folder_pictures:hover ~#subfolder_pictures {display: block;}
+#subfolder_pictures:hover {display: block;}
+
+#folder_videos:hover ~#subfolder_videos {display: block;}
+#subfolder_videos:hover {display: block;}
 
 #form_login
 {
@@ -28,8 +72,7 @@ body
 
 #form_login_title
 {
-    font-family: DINPro Medium;
-    font-size: 25px;
+    font-size: 22px;
     text-align: center;    
     padding: 25px;
 }
@@ -47,24 +90,14 @@ body
     transition: 0.4s;
 
     color: white;    
-    font-family: DINPro Medium;
     font-size: 22px;
     line-height:0;
     text-align: center;
     padding-bottom: 4px;
-
 }
 
-#button_login:hover
-{
-    background: var(--color_button_login);
-}
-
-#button_login:focus
-{ 
-    outline: none;
-}
-
+#button_login:hover {background: var(--color_button_login);}
+#button_login:focus {outline: none;}
 #button_login:active
 {
     background: var(--color_button_login_active);
@@ -72,11 +105,10 @@ body
     transition: 0.1s;
 }
 
-
 @font-face
 {
-font-family: 'DINPro Medium';
-font-style: normal;
-font-weight: normal;
-src: local('DINPro Medium'), url(assets/DINPro-Medium\ tr.woff) format('woff');
+    font-family: 'DINPro Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DINPro Medium'), url(assets/DINPro-Medium\ tr.woff) format('woff');
 }
