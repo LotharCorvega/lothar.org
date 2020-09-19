@@ -1,25 +1,32 @@
+:root
+{
+    --color_background: #111111;
+    --color_button_login: #07689f;
+    --color_button_login_active: #1493dd;
+}
+
 body
 {
     font-family: DINPro Medium;
     width: 100%;
     height: 100%;
-    background: #111111; 
+    background: var(--color_background); 
 }
 
-.login_form
+#form_login
 {
     position: absolute;
     top: 15%;
     right: 50%;
-    transform: translate(50%, 50%);
+    translate: translate(15%, 50%);
     width: 300px;
     height: 400px;
     border-radius: 5px;
-    background: #ffffff;
+    background: white;
     display: none;
 }
 
-.login_form_title
+#form_login_title
 {
     font-family: DINPro Medium;
     font-size: 25px;
@@ -27,7 +34,7 @@ body
     padding: 25px;
 }
 
-.button_login
+#button_login
 {
     position: absolute;
     top: 25px;
@@ -35,33 +42,36 @@ body
     width: 100px;
     height: 45px;
     background: none;
-    border: 2px solid #07689f;
+    border: 2px solid var(--color_button_login);
     border-radius: 5px;
     transition: 0.4s;
 
-    color: #ffffff;    
+    color: white;    
     font-family: DINPro Medium;
     font-size: 22px;
     line-height:0;
     text-align: center;
-    padding-bottom: 20px auto;
+    padding-bottom: 4px;
+
 }
 
-.button_login:hover
+#button_login:hover
 {
-    background: #07689f;
+    background: var(--color_button_login);
 }
 
-.button_login:focus
+#button_login:focus
 { 
     outline: none;
 }
 
-.button_login:active
+#button_login:active
 {
-    background: #1493dd;
-    border: solid #1493dd;
+    background: var(--color_button_login_active);
+    border: solid var(--color_button_login_active);
+    transition: 0.1s;
 }
+
 
 @font-face
 {

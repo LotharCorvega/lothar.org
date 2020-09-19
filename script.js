@@ -1,10 +1,10 @@
 
 
 
-function show() {
-    var x = document.getElementById("popup");
-    if (x.style.display == "none")
-      x.style.display = "block";
+function show_form_login() {
+    var form_login = document.getElementById("form_login");
+    if (form_login.style.display == "none")
+      form_login.style.display = "block";
     else
-      x.style.display = "none";
+      form_login.style.display = "none";
 }
