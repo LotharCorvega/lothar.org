@@ -67,9 +67,10 @@ body
     color: white;
     background: var(--color_directory);
     font-size: 22px;
+    user-select: none;
 }
 
-.folder {margin-left: 1.5em;}
+.folder {margin-left: 1.25em;}
 .folder:hover {cursor: pointer;}
 
 #subfolder_documents {display: none;}
@@ -83,9 +84,12 @@ li::before
     display: inline-block;
     position: relative;
     width: 1em;
-    height: 1em; 
+    height: 1em;
+    transform: scale(1.3);
     margin-right: 0.25em;
 }
+
+li:last-child::before {content: url(assets/branch_last.svg);}
 
 #form_login
 {
