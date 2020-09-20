@@ -48,20 +48,9 @@ li::before
 }
 
 #subfolder_documents{display: none;}
-#folder_documents:hover ~#subfolder_documents {display: block;}
-#subfolder_documents:hover {display: block;}
-
 #subfolder_music{display: none;}
-#folder_music:hover ~#subfolder_music {display: block;}
-#subfolder_music:hover {display: block;}
-
 #subfolder_pictures{display: none;}
-#folder_pictures:hover ~#subfolder_pictures {display: block;}
-#subfolder_pictures:hover {display: block;}
-
 #subfolder_videos{display: none;}
-#folder_videos:hover ~#subfolder_videos {display: block;}
-#subfolder_videos:hover {display: block;}
 
 #form_login
 {

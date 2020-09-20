@@ -9,16 +9,16 @@
 
 <body>
 
-    <button id="button_login" onclick="show_form_login()" >Login</button>    
+    <button id="button_login" onclick="show_hide(form_login)" >Login</button>    
     
-    <div id="form_login" style="display: none;">
+    <div id="form_login">
         <div id="form_login_title">Login</div>
     </div>
 
     <div id="directory"><a>Explorer</a>
         <ul class="folder" style="margin-left: 0em;">
             
-            <li><a id="folder_documents">documents</a>
+            <li><a id="folder_documents" onclick="show_hide(subfolder_documents)">documents</a>
 
                 <ul id="subfolder_documents" class="folder">
                     <li><a href="assets/1976.jpg">code</a></li>
@@ -27,7 +27,7 @@
                 </ul>
                 
             </li>
-            <li><a id="folder_music">music</a>
+            <li><a id="folder_music" onclick="show_hide(subfolder_music)">music</a>
 
                 <ul id="subfolder_music" class="folder">
                     <li><a>classic</a></li>
@@ -36,7 +36,7 @@
                 </ul>
                 
             </li>
-            <li><a id="folder_pictures">pictures</a>
+            <li><a id="folder_pictures" onclick="show_hide(subfolder_pictures)">pictures</a>
 
                 <ul id="subfolder_pictures" class="folder">
                     <li><a>svg</a></li>
@@ -45,7 +45,7 @@
                 </ul>
                 
             </li>
-            <li><a id="folder_videos">videos</a>
+            <li><a id="folder_videos" onclick="show_hide(subfolder_videos)">videos</a>
 
                 <ul id="subfolder_videos" class="folder">
                     <li><a>shorts</a></li>

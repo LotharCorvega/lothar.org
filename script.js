@@ -1,8 +1,9 @@
-function show_form_login()
+function show_hide(element)
 {
-  var form_login = document.getElementById("form_login");
-  if (form_login.style.display == "none")
-    form_login.style.display = "block";
+  if (element.style.display == "")
+    element.style.display = "block";
+  else if(element.style.display =="none")
+    element.style.display = "block";
   else
-    form_login.style.display = "none";
+    element.style.display = "none";
 }
