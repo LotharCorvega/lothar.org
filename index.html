@@ -13,50 +13,56 @@
         <button id="button_login" onclick="show_hide(form_login)">Login</button>
     </div>
     
-    <div id="form_login">
-        <div id="form_login_title">Login</div>
+    <div id="sidebar">
+        <div id="directory"><a>Files</a>
+            <ul class="folder" style="margin-left: 0em;">
+                
+                <li><a id="folder_documents" onclick="show_hide(subfolder_documents)">documents</a>
+
+                    <ul id="subfolder_documents" class="folder">
+                        <li><a href="assets/1976.jpg">code</a></li>
+                        <li><a href="https://google.com/">executables</a></li>
+                        <li><a>text</a></li>
+                    </ul>
+                    
+                </li>
+                <li><a id="folder_music" onclick="show_hide(subfolder_music)">music</a>
+
+                    <ul id="subfolder_music" class="folder">
+                        <li><a>classic</a></li>
+                        <li><a>rock</a></li>
+                        <li><a>pop</a></li>
+                    </ul>
+                    
+                </li>
+                <li><a id="folder_pictures" onclick="show_hide(subfolder_pictures)">pictures</a>
+
+                    <ul id="subfolder_pictures" class="folder">
+                        <li><a>svg</a></li>
+                        <li><a>pixelart</a></li>
+                        <li><a>archive</a></li>
+                    </ul>
+                    
+                </li>
+                <li><a id="folder_videos" onclick="show_hide(subfolder_videos)">videos</a>
+
+                    <ul id="subfolder_videos" class="folder">
+                        <li><a>shorts</a></li>
+                        <li><a>nice</a></li>
+                        <li><a>edits</a></li>
+                    </ul>
+                    
+                </li>
+            </ul>
+        </div>
     </div>
 
-    <div id="directory"><a>Explorer</a>
-        <ul class="folder" style="margin-left: 0em;">
-            
-            <li><a id="folder_documents" onclick="show_hide(subfolder_documents)">documents</a>
-
-                <ul id="subfolder_documents" class="folder">
-                    <li><a href="assets/1976.jpg">code</a></li>
-                    <li><a href="https://google.com/">executables</a></li>
-                    <li><a>text</a></li>
-                </ul>
-                
-            </li>
-            <li><a id="folder_music" onclick="show_hide(subfolder_music)">music</a>
-
-                <ul id="subfolder_music" class="folder">
-                    <li><a>classic</a></li>
-                    <li><a>rock</a></li>
-                    <li><a>pop</a></li>
-                </ul>
-                
-            </li>
-            <li><a id="folder_pictures" onclick="show_hide(subfolder_pictures)">pictures</a>
-
-                <ul id="subfolder_pictures" class="folder">
-                    <li><a>svg</a></li>
-                    <li><a>pixelart</a></li>
-                    <li><a>archive</a></li>
-                </ul>
-                
-            </li>
-            <li><a id="folder_videos" onclick="show_hide(subfolder_videos)">videos</a>
-
-                <ul id="subfolder_videos" class="folder">
-                    <li><a>shorts</a></li>
-                    <li><a>nice</a></li>
-                    <li><a>edits</a></li>
-                </ul>
-                
-            </li>
-        </ul>
+    <div id="form_login">Login
+        <div class="form_login_label">Nickname or email</div>
+        <input type="text" class="form_login_input">
+        <div class="form_login_label">Password</div>       
+        <input type="password" class="form_login_input">
+        <button type="button" id="form_login_input_button">Login</button>
     </div>
         
 </body>    
