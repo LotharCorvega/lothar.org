@@ -24,36 +24,42 @@ body
 
 #directory
 {
-    margin: 50px;
     position: absolute;
+    margin: 50px;
     color: white;
     font-size: 22px;
 }
 
+.folder
+{
+    margin-left: 1em;
+    padding: 0px;
+}
+
+.folder:hover{cursor: pointer;}
+
 li::before
 {
-    content: "-"; 
-    color: red;
+    content: url("assets/branch.svg");
     display: inline-block;
-    white-space: nowrap;
+    width: 1em;
+    height: 1em; 
+    margin-right: 0.3em;
 }
 
-
-.subfolder
-{
-    margin-left: 20%;
-    display: none;
-}
-
+#subfolder_documents{display: none;}
 #folder_documents:hover ~#subfolder_documents {display: block;}
 #subfolder_documents:hover {display: block;}
 
+#subfolder_music{display: none;}
 #folder_music:hover ~#subfolder_music {display: block;}
 #subfolder_music:hover {display: block;}
 
+#subfolder_pictures{display: none;}
 #folder_pictures:hover ~#subfolder_pictures {display: block;}
 #subfolder_pictures:hover {display: block;}
 
+#subfolder_videos{display: none;}
 #folder_videos:hover ~#subfolder_videos {display: block;}
 #subfolder_videos:hover {display: block;}
 
@@ -96,7 +102,7 @@ li::before
     padding-bottom: 4px;
 }
 
-#button_login:hover {background: var(--color_button_login);}
+#button_login:hover {background: var(--color_button_login); cursor: pointer;}
 #button_login:focus {outline: none;}
 #button_login:active
 {
