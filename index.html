@@ -14,43 +14,43 @@
     </div>
     
     <div id="sidebar">
-        <div id="directory"><a>Files</a>
-            <ul class="folder" style="margin-left: 0em;">
-                
-                <li><a id="folder_documents" onclick="show_hide(subfolder_documents)">documents</a>
-
-                    <ul id="subfolder_documents" class="folder">
-                        <li><a href="assets/1976.jpg">code</a></li>
-                        <li><a href="https://google.com/">executables</a></li>
-                        <li><a>text</a></li>
-                    </ul>
-                    
+        <div id="directory"><a>files</a>
+            <ul>                
+                <li class="folder"><a onclick="show_hide(subfolder_documents)">documents</a>
+                    <div class="subfolder" id="subfolder_documents">
+                        <ul>
+                            <li class="folder"><a>code</a></li>
+                            <li class="folder"><a>executables</a></li>
+                            <li class="folder"><a>text</a></li>
+                        </ul>                        
+                    </div>                    
                 </li>
-                <li><a id="folder_music" onclick="show_hide(subfolder_music)">music</a>
-
-                    <ul id="subfolder_music" class="folder">
-                        <li><a>classic</a></li>
-                        <li><a>rock</a></li>
-                        <li><a>pop</a></li>
-                    </ul>
-                    
+                <li class="folder"><a onclick="show_hide(subfolder_music)">music</a>
+                    <div class="subfolder" id="subfolder_music">
+                        <ul>
+                            <li class="folder"><a>classic</a></li>
+                            <li class="folder"><a>rock</a></li>
+                            <li class="folder"><a>pop</a></li>
+                        </ul>
+                    </div>                    
                 </li>
-                <li><a id="folder_pictures" onclick="show_hide(subfolder_pictures)">pictures</a>
-
-                    <ul id="subfolder_pictures" class="folder">
-                        <li><a>svg</a></li>
-                        <li><a>pixelart</a></li>
-                        <li><a>archive</a></li>
-                    </ul>
-                    
+                <li class="folder"><a onclick="show_hide(subfolder_pictures)">pictures</a>
+                    <div class="subfolder" id="subfolder_pictures">
+                        <ul>
+                            <li class="folder"><a>svg</a></li>
+                            <li class="folder"><a>pixelart</a></li>
+                            <li class="folder"><a>archive</a></li>
+                        </ul>
+                    </div>                    
                 </li>
-                <li><a id="folder_videos" onclick="show_hide(subfolder_videos)">videos</a>
-
-                    <ul id="subfolder_videos" class="folder">
-                        <li><a>shorts</a></li>
-                        <li><a>nice</a></li>
-                        <li><a>edits</a></li>
-                    </ul>
+                <li class="folder"><a onclick="show_hide(subfolder_videos)">videos</a>
+                    <div class="subfolder" id="subfolder_videos">
+                        <ul>
+                            <li class="folder"><a>shorts</a></li>
+                            <li class="folder"><a>nice</a></li>
+                            <li class="folder"><a>edits</a></li>
+                        </ul>
+                    </div>
                     
                 </li>
             </ul>
