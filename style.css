@@ -141,24 +141,21 @@ body
     border-radius: 30px;
     font-size: 15px;
     text-align: center;
+    transition: 0.4s;
 }
 
-.form_login_input:focus {outline: none;}
+.form_login_input:hover {cursor: pointer;}
+.form_login_input:focus { outline: none;}
 
 #form_login_input_button
 {
     width: 204px;
     height: 34px;
     margin-top: 45px;
-    background: none;
-    border: 2px solid var(--color_background);
-    border-radius: 30px;
-    font-size: 15px;
-
-    text-align: center;
+    transition: 0.1s;
 }
-
-#form_login_input_button:focus {outline: none;}
+#form_login_input_button:hover {color: white; background: var(--color_button_login); border: 2px solid var(--color_button_login);}
+#form_login_input_button:active {color: white; background: var(--color_button_login_active); border: 2px solid var(--color_button_login_active);}
 
 @font-face
 {
